@@ -22,7 +22,7 @@ public class DriveTrain_SS extends Subsystem {
 	
 
 
-	public void TeleopDrive(Joystick Driver) {
+	public void TeleopDrive(Joystick Driver, Joystick Driver2) {
 		double xSpeed = 0;
 		double zRotation = 0;
 		boolean isQuickTurn = false;

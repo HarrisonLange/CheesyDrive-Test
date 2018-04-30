@@ -4,7 +4,7 @@ import org.usfirst.frc.team4738.robot.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
 
-public class CheesyDrive_C extends Command {
+public class Lift_C extends Command {
 
 	@Override
 	protected void initialize() {
@@ -13,7 +13,7 @@ public class CheesyDrive_C extends Command {
 
 	@Override
 	protected void execute() {
-		Robot.DriveTrain.TeleopDrive(Robot.m_oi.getJoystick(), Robot.m_oi.getJoystick2());
+		Robot.Lift.Lift(Robot.m_oi.getJoystick3());
 		
 	}
 	@Override

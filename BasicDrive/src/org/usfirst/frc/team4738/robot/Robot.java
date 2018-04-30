@@ -10,6 +10,7 @@ package org.usfirst.frc.team4738.robot;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import org.usfirst.frc.team4738.robot.subsystems.DriveTrain_SS;
+import org.usfirst.frc.team4738.robot.subsystems.Lift_SS;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -21,6 +22,7 @@ import org.usfirst.frc.team4738.robot.subsystems.DriveTrain_SS;
 public class Robot extends TimedRobot {
 	public static OI m_oi;
 	public static DriveTrain_SS DriveTrain = new DriveTrain_SS();
+	public static Lift_SS Lift = new Lift_SS();
 
 	@Override
 	public void robotInit() {
