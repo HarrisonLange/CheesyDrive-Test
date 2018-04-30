@@ -21,11 +21,11 @@ public class DriveTrain_SS extends Subsystem {
 
 	public void TeleopDrive(Joystick Driver, Joystick Driver2) {
 		double xSpeed = 0;
-		double zRotation = 0;
+		double yRotation = 0;
 		boolean isQuickTurn = false;
 		xSpeed = Robot.m_oi.getJoystick1().getX();
-		zRotation = Robot.m_oi.getJoystick2().getY();
-		MainDrive.curvatureDrive(xSpeed, zRotation, isQuickTurn);
+		yRotation = Robot.m_oi.getJoystick2().getY();
+		MainDrive.curvatureDrive(xSpeed, yRotation, isQuickTurn);
 
 	}
 
