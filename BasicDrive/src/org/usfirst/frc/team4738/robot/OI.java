@@ -17,10 +17,11 @@ public class OI {
 		
 	}
 	
-	public Joystick getJoystick() {
+	public Joystick getJoystick1() {
 		return Driver;
+			
+		}
 		
-	}
 	public Joystick getJoystick2() {
 		return Driver2;
 		

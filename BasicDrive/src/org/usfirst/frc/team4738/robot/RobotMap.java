@@ -19,6 +19,8 @@ public class RobotMap {
 		Joystick1 = 0,
 		Joystick2 = 1,
 		Operator = 2;
+		public static final double
+		DeadZone = 0.05;
 		
 
 	

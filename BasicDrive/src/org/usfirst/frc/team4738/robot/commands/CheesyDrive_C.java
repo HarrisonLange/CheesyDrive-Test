@@ -13,7 +13,7 @@ public class CheesyDrive_C extends Command {
 
 	@Override
 	protected void execute() {
-		Robot.DriveTrain.TeleopDrive(Robot.m_oi.getJoystick(), Robot.m_oi.getJoystick2());
+		Robot.DriveTrain.TeleopDrive(Robot.m_oi.getJoystick1(), Robot.m_oi.getJoystick2());
 		
 	}
 	@Override
