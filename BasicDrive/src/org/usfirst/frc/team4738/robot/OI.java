@@ -3,10 +3,14 @@ package org.usfirst.frc.team4738.robot;
 import edu.wpi.first.wpilibj.Joystick;
 
 public class OI {
-	Joystick Driver = new Joystick(RobotMap.Joystick1);
-	Joystick Driver2 = new Joystick(RobotMap.Joystick2);
-	Joystick Operator = new Joystick(RobotMap.Operator);
+	public Joystick Driver = new Joystick(RobotMap.Joystick1);
+	//public Joystick Driver2 = new Joystick(RobotMap.Joystick2);
+	public Joystick Operator = new Joystick(RobotMap.Operator);
 
+	public double X = Driver.getRawAxis(1);
+	public double Y = Driver.getRawAxis(2);
+
+	
 	public OI() {
 
 	}
@@ -16,10 +20,10 @@ public class OI {
 
 	}
 
-	public Joystick getJoystick2() {
-		return Driver2;
+	//public Joystick getJoystick2() {
+		//return Driver2;
 
-	}
+	//}
 
 	public Joystick getJoystick3() {
 		return Operator;

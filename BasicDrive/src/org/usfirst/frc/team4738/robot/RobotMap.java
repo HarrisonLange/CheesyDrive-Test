@@ -6,7 +6,7 @@ public class RobotMap {
 	// Motors
 		Drive_Left = 0, Drive_Right = 1, Lift = 2, Climber = 3,
 	// Controls
-		Joystick1 = 0, Joystick2 = 1, Operator = 2;
+		Joystick1 = 0, Operator = 1;
 	public static final double DeadZone = 0.05;
 
 }
