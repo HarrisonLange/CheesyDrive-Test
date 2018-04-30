@@ -19,7 +19,7 @@ public class Lift_SS extends Subsystem {
 	}
 	public void Lift(Joystick Operator) {
 		double liftSpeed=0;
-		liftSpeed = Robot.m_oi.getJoystick1().getX();
+		liftSpeed = Robot.m_oi.getJoystick3().getX();
 		LiftDrive.tankDrive(liftSpeed, 0);
 		
 	}
