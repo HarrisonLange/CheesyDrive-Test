@@ -14,11 +14,12 @@ public class Lift_C extends Command {
 	@Override
 	protected void execute() {
 		Robot.Lift.Lift(Robot.m_oi.getJoystick3());
-		
+
 	}
+
 	@Override
 	protected void end() {
-		Robot.DriveTrain.Stop();
+		Robot.Lift.Stop();
 	}
 
 	@Override

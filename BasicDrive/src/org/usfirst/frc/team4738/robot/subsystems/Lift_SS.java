@@ -12,20 +12,23 @@ public class Lift_SS extends Subsystem {
 
 	private Spark Lift = new Spark(RobotMap.Lift);
 	private DifferentialDrive LiftDrive = new DifferentialDrive(Lift, null);
+
 	@Override
 	protected void initDefaultCommand() {
-		
-		
+
 	}
+
 	public void Lift(Joystick Operator) {
-		double liftSpeed=0;
+		double liftSpeed = 0;
 		liftSpeed = Robot.m_oi.getJoystick3().getX();
 		LiftDrive.tankDrive(liftSpeed, 0);
-		
+
 	}
+
 	public void intake() {
-		
+
 	}
+
 	public void Stop() {
 		Lift.set(0);
 	}

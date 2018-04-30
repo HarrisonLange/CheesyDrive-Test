@@ -12,15 +12,12 @@ public class DriveTrain_SS extends Subsystem {
 	Spark left = new Spark(RobotMap.Drive_Left);
 	Spark right = new Spark(RobotMap.Drive_Right);
 	private DifferentialDrive MainDrive = new DifferentialDrive(left, right);
-	
-	
+
 	@Override
 	protected void initDefaultCommand() {
 		setDefaultCommand(new CheesyDrive_C());
-		
-	}
-	
 
+	}
 
 	public void TeleopDrive(Joystick Driver, Joystick Driver2) {
 		double xSpeed = 0;
@@ -31,7 +28,7 @@ public class DriveTrain_SS extends Subsystem {
 		MainDrive.curvatureDrive(xSpeed, zRotation, isQuickTurn);
 
 	}
-	
+
 	public void Stop() {
 		MainDrive.tankDrive(0, 0);
 	}
