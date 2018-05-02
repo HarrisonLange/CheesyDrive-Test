@@ -1,5 +1,7 @@
 package org.usfirst.frc.team4738.robot;
 
+import edu.wpi.first.wpilibj.Spark;
+
 public class RobotMap {
 
 	public static final int
@@ -8,5 +10,8 @@ public class RobotMap {
 	// Controls
 		Joystick1 = 0, Operator = 1;
 	public static final double DeadZone = 0.05;
-
+	
+	public static Spark left = new Spark(RobotMap.Drive_Left);
+	public static Spark right = new Spark(RobotMap.Drive_Right);
+	public static Spark LiftD = new Spark(RobotMap.Lift);
 }

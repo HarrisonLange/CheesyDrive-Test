@@ -2,16 +2,14 @@ package org.usfirst.frc.team4738.robot.subsystems;
 
 import org.usfirst.frc.team4738.robot.Robot;
 import org.usfirst.frc.team4738.robot.RobotMap;
-
 import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 public class Lift_SS extends Subsystem {
 
-	private Spark Lift = new Spark(RobotMap.Lift);
-	private DifferentialDrive LiftDrive = new DifferentialDrive(Lift, null);
+	
+	private DifferentialDrive LiftDrive = new DifferentialDrive(RobotMap.LiftD, null);
 
 	@Override
 	protected void initDefaultCommand() {
@@ -30,6 +28,6 @@ public class Lift_SS extends Subsystem {
 	}
 
 	public void Stop() {
-		Lift.set(0);
+		RobotMap.LiftD.set(0);
 	}
 }
