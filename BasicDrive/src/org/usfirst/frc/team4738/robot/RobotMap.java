@@ -1,5 +1,5 @@
 package org.usfirst.frc.team4738.robot;
-
+//All of the ports and controllers are setup in the RobotMap
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.Solenoid;

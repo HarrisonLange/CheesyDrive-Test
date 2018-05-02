@@ -11,6 +11,7 @@ public class Pneumatics_C extends Command {
 
 	@Override
 	protected void initialize() {
+		RobotMap.aCompressor.setClosedLoopControl(true);
 		RobotMap.Open.set(false);
 		RobotMap.Close.set(true);
 	}

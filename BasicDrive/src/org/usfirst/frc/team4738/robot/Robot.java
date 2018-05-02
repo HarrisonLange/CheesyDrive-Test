@@ -1,5 +1,5 @@
 package org.usfirst.frc.team4738.robot;
-
+//All of the ports and controllers are setup in the RobotMap
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import org.usfirst.frc.team4738.robot.subsystems.DriveTrain_SS;
@@ -36,7 +36,7 @@ public class Robot extends TimedRobot {
 
 	@Override
 	public void teleopInit() {
-		RobotMap.aCompressor.setClosedLoopControl(true);
+		
 	}
 
 	@Override
