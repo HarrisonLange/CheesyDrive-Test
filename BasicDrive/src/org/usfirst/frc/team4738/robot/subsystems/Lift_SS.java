@@ -24,7 +24,7 @@ public class Lift_SS extends Subsystem {
 	}
 
 	public void intake() {
-
+	
 	}
 
 	public void Stop() {
