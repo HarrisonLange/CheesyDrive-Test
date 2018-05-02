@@ -7,9 +7,6 @@ public class OI {
 	//public Joystick Driver2 = new Joystick(RobotMap.Joystick2);
 	//public Joystick Operator = new Joystick(RobotMap.Operator);
 
-	public double X = Driver.getRawAxis(1);
-	public double Y = Driver.getRawAxis(2);
-
 	
 	public OI() {
 
