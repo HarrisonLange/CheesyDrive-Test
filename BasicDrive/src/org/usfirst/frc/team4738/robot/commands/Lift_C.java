@@ -13,7 +13,7 @@ public class Lift_C extends Command {
 
 	@Override
 	protected void execute() {
-		Robot.Lift.Lift(Robot.m_oi.getJoystick3());
+		Robot.Lift.Lift(Robot.m_oi.getJoystick1().getRawAxis(3));
 
 	}
 
