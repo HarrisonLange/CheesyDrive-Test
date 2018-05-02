@@ -11,7 +11,7 @@ public class RobotMap {
 	//Pneumatics
 		Compressor = 0, POpen = 1, PClose = 2, PKick = 3,
 	// Motors
-		Drive_Left = 0, Drive_Right = 1, Lift = 2, Climber = 3,
+		Drive_Left = 2, Drive_Right = 3, Lift = 1, Climber = 0,
 	// Controls
 		Joystick1 = 0, Operator = 1;
 	
