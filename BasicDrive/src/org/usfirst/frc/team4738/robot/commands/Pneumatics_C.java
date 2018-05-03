@@ -17,7 +17,7 @@ public class Pneumatics_C extends Command {
 	}
 	@Override
 	protected void execute() {
-		while(Robot.m_oi.Driver.getRawButton(1) == true) {
+		while(Robot.m_oi.Driver.getRawButton(RobotMap.OpenB) == true) {
 			RobotMap.Open.set(true);
 		}
 		RobotMap.Open.set(false);

@@ -1,6 +1,7 @@
 package org.usfirst.frc.team4738.robot.commands;
 
 import org.usfirst.frc.team4738.robot.Robot;
+import org.usfirst.frc.team4738.robot.RobotMap;
 
 import edu.wpi.first.wpilibj.command.Command;
 
@@ -13,7 +14,7 @@ public class CheesyDrive_C extends Command {
 
 	@Override
 	protected void execute() {
-		Robot.DriveTrain.TeleopDrive(Robot.m_oi.getJoystick1().getRawAxis(1), Robot.m_oi.getJoystick1().getRawAxis(5));
+		Robot.DriveTrain.TeleopDrive(Robot.m_oi.getJoystick1().getRawAxis(RobotMap.ForwardA), Robot.m_oi.getJoystick1().getRawAxis(RobotMap.TurnA));
 
 	}
 

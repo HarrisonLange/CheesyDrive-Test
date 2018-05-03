@@ -9,11 +9,39 @@ public class RobotMap {
 	//This is all of the ports
 	public static final int
 	//Pneumatics
-		Compressor = 0, POpen = 1, PClose = 2, PKick = 3,
+		//Compressor
+		Compressor = 0, 
+		//Solenoid Value (Open)
+		POpen = 1, 
+		//Solenoid Value (Close)
+		PClose = 2, 
+		//Solenoid Value (Kick)
+		PKick = 3,
 	// Motors
-		Drive_Left = 2, Drive_Right = 3, Lift = 1, Climber = 0,
+		//Left Motor Controller
+		Drive_Left = 2, 
+		//Right Motor Controller
+		Drive_Right = 3, 
+		//Lift Motor Controller
+		Lift = 1, 
+		//Climber Motor Controller
+		Climber = 0,
 	// Controls
-		Joystick1 = 0, Operator = 1;
+		Joystick1 = 0,
+	//Joystick 1 Axis
+		//Robot Speed X
+		ForwardA = 1, 
+		//Robot Turning y
+		TurnA = 5, 
+		//Lift up
+		LiftUA = 3, 
+		//Lift Down
+		LiftDA = 4,
+	//Joystick 1 Buttons
+		//Quickturn
+		QuickTurnB = 1, 
+		//Intake Open
+		OpenB = 2;
 	
 	//Veriables
 	public static final double DeadZone = 0.05;

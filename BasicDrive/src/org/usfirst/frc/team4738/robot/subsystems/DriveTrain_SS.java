@@ -20,8 +20,9 @@ public class DriveTrain_SS extends Subsystem {
 		double xSpeed = 0;
 		double yRotation = 0;
 		boolean isQuickTurn = false;
-		xSpeed = Robot.m_oi.getJoystick1().getRawAxis(1);
-		yRotation = Robot.m_oi.getJoystick1().getRawAxis(5);
+		isQuickTurn = Robot.m_oi.getJoystick1().getRawButton(RobotMap.QuickTurnB);
+		xSpeed = Robot.m_oi.getJoystick1().getRawAxis(RobotMap.ForwardA);
+		yRotation = Robot.m_oi.getJoystick1().getRawAxis(RobotMap.TurnA);
 		MainDrive.curvatureDrive(xSpeed, yRotation, isQuickTurn);
 
 	}

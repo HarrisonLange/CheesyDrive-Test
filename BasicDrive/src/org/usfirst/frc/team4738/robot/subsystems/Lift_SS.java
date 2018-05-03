@@ -17,14 +17,11 @@ public class Lift_SS extends Subsystem {
 
 	public void Lift(double d) {
 		double liftSpeed = 0;
-		liftSpeed = (Robot.m_oi.getJoystick1().getRawAxis(3) - Robot.m_oi.getJoystick1().getRawAxis(4));
+		liftSpeed = (Robot.m_oi.getJoystick1().getRawAxis(RobotMap.LiftUA) - Robot.m_oi.getJoystick1().getRawAxis(RobotMap.LiftDA));
 		LiftDrive.tankDrive(liftSpeed, 0);
 
 	}
 
-	public void intake() {
-	
-	}
 
 	public void Stop() {
 		RobotMap.LiftD.set(0);
